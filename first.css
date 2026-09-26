@@ -1,0 +1,131 @@
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-color: #521524;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, Tahoma, sans-serif;
+        }
+
+
+        /* النافذة */
+
+        .welcome {
+            width: 500px;
+
+            padding: 50px 30px;
+
+            text-align: center;
+
+            background-color: #79273b;
+
+            border-radius: 20px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* الاسم */
+
+        .welcome h1 {
+            margin: 0 0 15px;
+
+            font-size: 45px;
+
+            color: rgb(255, 255, 255);
+        }
+
+        img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+        /* النص */
+
+        .welcome p {
+            margin-bottom: 30px;
+
+            font-size: 20px;
+
+            color: white;
+        }
+
+
+        /* مكان الأزرار */
+
+        .languages {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        /* أزرار اللغات */
+
+        .languages a {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background-color: #9d3b55;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-size: 18px;
+
+            transition: 0.3s;
+        }
+
+
+        /* عندما تضع الماوس على الزر */
+
+        .languages a:hover {
+            background-color: #9d3b55;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* للموبايل */
+
+        @media (max-width: 600px) {
+
+            .welcome {
+                width: 80%;
+
+                padding: 40px 20px;
+            }
+
+            .welcome h1 {
+                font-size: 35px;
+            }
+
+            .welcome p {
+                font-size: 18px;
+            }
+
+            .languages {
+                flex-direction: column;
+            }
+
+            .languages a {
+                width: auto;
+            }
+
+        }

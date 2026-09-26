@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #cf889a;
+    color: #333;
+}
+
+.cv {
+    width: 900px;
+    min-height: 1100px;
+    margin: 30px auto;
+    display: flex;
+    direction: ltr;
+    background-color: white;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 30%;
+    background-color: #79273b;
+    color: white;
+    padding: 30px 25px;
+    direction: rtl;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.profile p {
+    font-size: 15px;
+}
+
+
+/* Sidebar Sections */
+
+.sidebar section {
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* Main Content */
+
+.content {
+    width: 70%;
+    padding: 40px 35px;
+    direction: rtl;
+}
+
+.content section {
+    margin-bottom: 35px;
+}
+
+.content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #263238;
+}
+
+.content p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* Experience */
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 14px !important;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+
+/* Education */
+
+.education h3 {
+    margin-bottom: 5px;
+}
+
+
+/* Courses */
+
+.courses ul {
+    padding-right: 20px;
+}
+
+.courses li {
+    margin-bottom: 8px;
+}
+
+
+/* Print */
+
+@media print {
+
+    body {
+        background-color: white;
+    }
+
+    .cv {
+        margin: 0;
+        width: 100%;
+    }
+
+}
