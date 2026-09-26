@@ -158,3 +158,116 @@ body {
     }
 
 }
+```css
+/* =========================
+   Responsive - Mobile
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cv {
+        width: 100%;
+        min-height: auto;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: none;
+    }
+
+
+    /* السايد بار */
+
+    .sidebar {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        text-align: center;
+    }
+
+
+    /* الصورة */
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+
+        object-fit: cover;
+
+        border-radius: 50%;
+    }
+
+
+    /* اسم الشخص */
+
+    .profile h1 {
+        font-size: 28px;
+
+        margin: 15px 0 5px;
+    }
+
+
+    .profile p {
+        font-size: 16px;
+    }
+
+
+    /* القوائم داخل السايد بار */
+
+    .skills ul {
+        padding-right: 20px;
+
+        text-align: right;
+    }
+
+
+    /* المحتوى */
+
+    .content {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* العناوين */
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+
+    /* النصوص */
+
+    .content p,
+    .content li {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+
+    /* الخبرات */
+
+    .job {
+        margin-bottom: 30px;
+    }
+
+}
+```
+
