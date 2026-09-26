@@ -1,9 +1,10 @@
-
+```css
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 
 body {
     font-family: Arial, Tahoma, sans-serif;
@@ -11,140 +12,544 @@ body {
     color: #333;
 }
 
+
+/* =========================
+   CV
+   ========================= */
+
 .cv {
-    width: 900px;
+    width: 100%;
+    max-width: 1100px;
     min-height: 1100px;
+
     margin: 30px auto;
+
     display: flex;
-    direction: ltr;
+    flex-direction: row-reverse;
+
     background-color: white;
+
+    overflow: hidden;
 }
 
 
-/* Sidebar */
+/* =========================
+   Sidebar
+   ========================= */
 
 .sidebar {
     width: 30%;
+
     background-color: #79273b;
     color: white;
+
     padding: 30px 25px;
+
     direction: rtl;
+
+    flex-shrink: 0;
 }
+
 
 .profile {
     text-align: center;
     margin-bottom: 35px;
 }
 
+
 .profile img {
     width: 140px;
     height: 140px;
+
     object-fit: cover;
+
     border-radius: 50%;
+
     margin-bottom: 15px;
+
+    max-width: 100%;
 }
+
 
 .profile h1 {
     font-size: 24px;
     margin-bottom: 8px;
+
+    word-break: break-word;
 }
+
 
 .profile p {
     font-size: 15px;
+
+    line-height: 1.6;
 }
 
 
-/* Sidebar Sections */
+/* =========================
+   Sidebar Sections
+   ========================= */
 
 .sidebar section {
     margin-bottom: 30px;
 }
 
+
 .sidebar h2 {
     font-size: 18px;
+
     border-bottom: 2px solid white;
+
     padding-bottom: 8px;
+
     margin-bottom: 15px;
 }
 
+
 .sidebar p {
     font-size: 14px;
+
     line-height: 1.8;
+
     margin-bottom: 5px;
+
+    overflow-wrap: anywhere;
 }
+
 
 .sidebar ul {
     list-style: none;
 }
 
+
 .sidebar li {
     margin-bottom: 10px;
+
     font-size: 14px;
+
+    line-height: 1.6;
 }
 
 
-/* Main Content */
+/* =========================
+   Main Content
+   ========================= */
 
 .content {
     width: 70%;
+
     padding: 40px 35px;
+
     direction: rtl;
+
+    min-width: 0;
 }
+
 
 .content section {
     margin-bottom: 35px;
 }
 
+
 .content h2 {
     font-size: 22px;
+
     margin-bottom: 15px;
+
     padding-bottom: 8px;
+
     border-bottom: 2px solid #263238;
 }
 
+
 .content p {
     line-height: 1.8;
+
     font-size: 15px;
+
+    overflow-wrap: anywhere;
 }
 
 
-/* Experience */
+/* =========================
+   Experience
+   ========================= */
 
 .job {
     margin-bottom: 25px;
 }
 
+
 .job h3 {
     font-size: 18px;
+
+    margin-bottom: 5px;
+
+    line-height: 1.5;
+}
+
+
+.job h4 {
+    line-height: 1.6;
+
+    margin-bottom: 10px;
+}
+
+
+.job ul {
+    padding-right: 20px;
+}
+
+
+.job li {
+    line-height: 1.8;
+
     margin-bottom: 5px;
 }
 
+
 .date {
     font-size: 14px !important;
+
     color: #777;
+
     margin-bottom: 8px;
 }
 
 
-/* Education */
+/* =========================
+   Education
+   ========================= */
 
 .education h3 {
     margin-bottom: 5px;
 }
 
 
-/* Courses */
+/* =========================
+   Courses
+   ========================= */
 
 .courses ul {
     padding-right: 20px;
 }
 
+
 .courses li {
     margin-bottom: 8px;
+
+    line-height: 1.7;
 }
 
 
-/* Print */
+/* =====================================================
+   Tablet
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .cv {
+        width: 100%;
+
+        margin: 0;
+
+        min-height: 100vh;
+    }
+
+
+    .sidebar {
+        width: 32%;
+
+        padding: 25px 18px;
+    }
+
+
+    .content {
+        width: 68%;
+
+        padding: 30px 25px;
+    }
+
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .profile h1 {
+        font-size: 21px;
+    }
+
+
+    .sidebar h2 {
+        font-size: 17px;
+    }
+
+
+    .sidebar p,
+    .sidebar li {
+        font-size: 13px;
+    }
+
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+
+    .content p,
+    .content li {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   Mobile
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        background-color: white;
+
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    .cv {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        overflow: visible;
+
+        box-shadow: none;
+    }
+
+
+    /* =========================
+       Sidebar
+       ========================= */
+
+    .sidebar {
+        width: 100%;
+
+        padding: 30px 20px;
+
+        text-align: center;
+    }
+
+
+    .profile {
+        margin-bottom: 30px;
+    }
+
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .profile h1 {
+        font-size: 27px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .profile p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Sidebar sections */
+
+    .sidebar section {
+        margin-bottom: 25px;
+    }
+
+
+    .sidebar h2 {
+        font-size: 19px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .sidebar p {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    .sidebar ul {
+        padding: 0;
+    }
+
+
+    .sidebar li {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       Main Content
+       ========================= */
+
+    .content {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 30px 20px;
+
+        min-width: 0;
+    }
+
+
+    .content section {
+        margin-bottom: 30px;
+    }
+
+
+    .content h2 {
+        font-size: 22px;
+
+        margin-bottom: 15px;
+
+        padding-bottom: 8px;
+    }
+
+
+    .content h3 {
+        font-size: 19px;
+
+        line-height: 1.5;
+    }
+
+
+    .content h4 {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    .content p {
+        font-size: 16px;
+
+        line-height: 1.9;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    .job {
+        margin-bottom: 30px;
+    }
+
+
+    .job ul {
+        padding-right: 20px;
+    }
+
+
+    .job li {
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        margin-bottom: 7px;
+    }
+
+
+    .date {
+        font-size: 14px !important;
+    }
+
+
+    .courses li {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =====================================================
+   Small Mobile
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .sidebar {
+        padding: 25px 15px;
+    }
+
+
+    .profile img {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+
+    .content {
+        padding: 25px 15px;
+    }
+
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+
+    .content p,
+    .content li {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================
+   Print
+   ========================= */
 
 @media print {
 
@@ -152,122 +557,16 @@ body {
         background-color: white;
     }
 
-    .cv {
-        margin: 0;
-        width: 100%;
-    }
-
-}
-```css
-/* =========================
-   Responsive - Mobile
-   ========================= */
-
-@media (max-width: 700px) {
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
 
     .cv {
         width: 100%;
-        min-height: auto;
+
+        max-width: none;
 
         margin: 0;
-
-        display: flex;
-        flex-direction: column;
 
         box-shadow: none;
     }
 
-
-    /* السايد بار */
-
-    .sidebar {
-        width: 100%;
-
-        padding: 25px 20px;
-
-        text-align: center;
-    }
-
-
-    /* الصورة */
-
-    .profile img {
-        width: 120px;
-        height: 120px;
-
-        object-fit: cover;
-
-        border-radius: 50%;
-    }
-
-
-    /* اسم الشخص */
-
-    .profile h1 {
-        font-size: 28px;
-
-        margin: 15px 0 5px;
-    }
-
-
-    .profile p {
-        font-size: 16px;
-    }
-
-
-    /* القوائم داخل السايد بار */
-
-    .skills ul {
-        padding-right: 20px;
-
-        text-align: right;
-    }
-
-
-    /* المحتوى */
-
-    .content {
-        width: 100%;
-
-        padding: 25px 20px;
-
-        box-sizing: border-box;
-    }
-
-
-    /* العناوين */
-
-    .content h2 {
-        font-size: 24px;
-    }
-
-
-    .content h3 {
-        font-size: 20px;
-    }
-
-
-    /* النصوص */
-
-    .content p,
-    .content li {
-        font-size: 16px;
-
-        line-height: 1.8;
-    }
-
-
-    /* الخبرات */
-
-    .job {
-        margin-bottom: 30px;
-    }
-
 }
 ```
-
